@@ -32,7 +32,7 @@ class Balls extends React.Component {
     // });
 
     var width = window.innerWidth;
-    var height = window.innerHeight - 200;
+    var height = window.innerHeight - 220;
 
     var render = Render.create({
       element: document.body,

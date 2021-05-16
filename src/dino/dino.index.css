@@ -1,0 +1,39 @@
+#field {
+  width: 50%;
+  height: 15vw;
+  border-style: solid;
+  margin: auto;
+  margin-top: 5%;
+  display: flex;
+}
+
+.dino {
+  width: 2vw;
+  height: 2vw;
+  background-color: silver;
+  position: fixed;
+  margin: auto;
+  margin-left: 10px;
+  margin-top: 13vw;
+}
+
+.cactus {
+  width: 2vw;
+  height: 2vw;
+  background-color: rgb(100, 255, 38);
+  position: relative;
+  margin-top: 13vw;
+}
+
+.dino-jump {
+  animation: dino-jump-keyframes alternate-reverse 0.5s;
+}
+
+@keyframes dino-jump-keyframes {
+  0% {
+    margin-top: 13vw;
+  }
+  50% {
+    margin-top: 9vw;
+  }
+}

@@ -32,7 +32,7 @@ class Balls extends React.Component {
     // });
 
     var width = window.innerWidth;
-    var height = window.innerHeight - 220;
+    var height = window.innerHeight - 235;
 
     var render = Render.create({
       element: document.body,
@@ -65,6 +65,10 @@ class Balls extends React.Component {
     });
 
     World.add(this.engine.world, [leftBorder, rightBorder, topBorder, ground]);
+    // World.add(
+    //   this.engine.world,
+    //   Bodies.circle(230, 50, 50, { restitution: 0.7 })
+    // );
 
     Engine.run(this.engine);
 
